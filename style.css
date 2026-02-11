@@ -96,6 +96,57 @@ body {
   font-weight: bold;
 }
 
+.product-card {
+  color: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.15);
+}
+
+.construction { background: linear-gradient(135deg, #fee2e2, #fecaca); }
+.paints { background: linear-gradient(135deg, #fef9c3, #fde68a); }
+.plumbing { background: linear-gradient(135deg, #cffafe, #a5f3fc); }
+.tools { background: linear-gradient(135deg, #ede9fe, #ddd6fe); }
+.electrical { background: linear-gradient(135deg, #dcfce7, #bbf7d0); }
+.fasteners { background: linear-gradient(135deg, #e0f2fe, #bae6fd); }
+.safety { background: linear-gradient(135deg, #ffedd5, #fed7aa); }
+.adhesives { background: linear-gradient(135deg, #fce7f3, #fbcfe8); }
+
+.related-products {
+  margin-top: 26px;
+  padding: 22px;
+  border-radius: 12px;
+  background: linear-gradient(130deg, rgba(37, 99, 235, 0.08), rgba(249, 115, 22, 0.09));
+  border: 1px dashed rgba(30, 64, 175, 0.28);
+}
+
+.related-products h3 {
+  margin-bottom: 8px;
+}
+
+.related-products p {
+  margin-bottom: 14px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chips span {
+  background: linear-gradient(135deg, #1d4ed8, #f97316);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 /* Contact */
 .contact {
   text-align: center;
