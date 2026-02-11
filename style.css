@@ -194,7 +194,23 @@ body {
 /*logo design*/
 
 .logo {
-  font-size: 32px;
-  font-weight: bold;
-  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 26px;
+  border-radius: 999px;
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1;
+  background: linear-gradient(120deg, #f97316 0%, #facc15 30%, #22c55e 62%, #2563eb 100%);
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.28);
+  text-shadow: 0 2px 8px rgba(15, 23, 42, 0.35);
+}
+
+.logo-accent {
+  color: #0f172a;
+  text-shadow: none;
 }
