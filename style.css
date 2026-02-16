@@ -1,218 +1,58 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
 
-body {
-  color: #333;
-  background-color: #f5f7fa;
-  background-image:
-    radial-gradient(circle at 15% 20%, rgba(255, 153, 0, 0.32), transparent 40%),
-    radial-gradient(circle at 85% 18%, rgba(59, 130, 246, 0.3), transparent 42%),
-    radial-gradient(circle at 10% 88%, rgba(236, 72, 153, 0.25), transparent 45%),
-    radial-gradient(circle at 86% 85%, rgba(34, 197, 94, 0.28), transparent 40%),
-    linear-gradient(135deg, #fff7ed 0%, #eff6ff 50%, #fdf2f8 100%);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
+body{background:#f5f7fa;color:#333;}
 
-/* Header */
-.header {
-  background: linear-gradient(135deg, #1f2933, #374151);
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-}
+/* HEADER */
+.header{background:white;box-shadow:0 2px 12px rgba(0,0,0,0.08);position:sticky;top:0;z-index:1000;}
+.header-container{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 20px;}
+.site-logo{height:60px;}
+.navbar{display:flex;gap:25px;}
+.navbar a{text-decoration:none;font-weight:bold;color:#1f2933;}
+.navbar a:hover{color:#2563eb;}
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  background: skyblue;
-  padding: 12px;
-}
+/* HERO */
+.hero{text-align:center;padding:60px 20px;background:white;}
+.hero-logo{height:120px;margin-bottom:10px;}
+.btn{display:inline-block;margin-top:15px;padding:12px 20px;background:#25D366;color:white;text-decoration:none;border-radius:6px;font-weight:bold;}
+.call-btn{background:#2563eb;margin-left:10px;}
 
-.navbar a {
-  color: white ;
-  text-decoration: none;
-  font-weight: bold;
-}
+/* SECTION */
+.section{max-width:1100px;margin:40px auto;padding:30px;background:white;border-radius:10px;}
 
-/* Hero */
-.hero {
-  text-align: center;
-  padding: 40px 20px;
-  background: white;
-}
+/* CARDS */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+.card{padding:20px;border-radius:8px;text-align:center;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
 
-.hero h2 {
-  margin-bottom: 10px;
-}
+/* COLORS */
+.construction{background:#fee2e2;}
+.paints{background:#fef9c3;}
+.plumbing{background:#cffafe;}
+.tools{background:#ede9fe;}
+.electrical{background:#dcfce7;}
+.fasteners{background:#e0f2fe;}
+.safety{background:#ffedd5;}
+.adhesives{background:#fce7f3;}
 
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 20px;
-  background: #25D366;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-}
+/* GALLERY */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;}
+.gallery img{width:100%;height:200px;object-fit:cover;border-radius:8px;}
 
-/* Sections */
-.section {
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
+/* MAP */
+.map-container iframe{width:100%;border-radius:10px;}
 
-.section {
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: 20px auto;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
-}
+/* FOOTER */
+.footer{background:#111827;color:white;text-align:center;padding:20px;margin-top:40px;}
 
-
-/* Cards */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: powderblue;
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  font-weight: bold;
-}
-
-.product-card {
-  color: #0f172a;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.15);
-}
-
-.construction { background: linear-gradient(135deg, #fee2e2, #fecaca); }
-.paints { background: linear-gradient(135deg, #fef9c3, #fde68a); }
-.plumbing { background: linear-gradient(135deg, #cffafe, #a5f3fc); }
-.tools { background: linear-gradient(135deg, #ede9fe, #ddd6fe); }
-.electrical { background: linear-gradient(135deg, #dcfce7, #bbf7d0); }
-.fasteners { background: linear-gradient(135deg, #e0f2fe, #bae6fd); }
-.safety { background: linear-gradient(135deg, #ffedd5, #fed7aa); }
-.adhesives { background: linear-gradient(135deg, #fce7f3, #fbcfe8); }
-
-.related-products {
-  margin-top: 26px;
-  padding: 22px;
-  border-radius: 12px;
-  background: linear-gradient(130deg, rgba(37, 99, 235, 0.08), rgba(249, 115, 22, 0.09));
-  border: 1px dashed rgba(30, 64, 175, 0.28);
-}
-
-.related-products h3 {
-  margin-bottom: 8px;
-}
-
-.related-products p {
-  margin-bottom: 14px;
-}
-
-.chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.chips span {
-  background: linear-gradient(135deg, #1d4ed8, #f97316);
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-/* Contact */
-.contact {
-  text-align: center;
-}
-
-.map-container {
-  width: 100%;
-  margin-top: 20px;
-}
-
-.map-container iframe {
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* Footer */
-.footer {
-  background: #111827;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-}
-
-/* Call button */
-.call-btn {
-  background: #2563eb;
-  margin-left: 10px;
-}
-
-/* Gallary */
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-}
-
-.gallery img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-/*logo design*/
-
-.logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 10px 26px;
-  border-radius: 999px;
-  font-size: 35px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  line-height: 1;
-  background: linear-gradient(120deg, #f97316 0%, #facc15 30%, #22c55e 62%, #2563eb 100%);
-  color: #ffffff;
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.28);
-  text-shadow: 0 2px 8px rgba(15, 23, 42, 0.35);
-}
-
-.logo-accent {
-  color: #0f172a;
-  text-shadow: none;
+/* FLOAT WHATSAPP */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+box-shadow:0 4px 12px rgba(0,0,0,0.3);
 }
